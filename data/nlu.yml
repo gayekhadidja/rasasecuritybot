@@ -1,0 +1,217 @@
+version: "3.0"
+nlu:
+- intent: saluer
+  examples: |
+    - hey
+    - Bonjour
+    - hi
+    - bonjour bot
+    - bonsoir
+    - bonsoir bot
+    - bonsoir bot ! J'ai besoins des informations
+    - bonjour ! je cherche des informations
+    - bonjour
+    - salut
+- intent: goodbye
+  examples: |
+    - bonne fin de soire
+    - bye
+    - au revoir
+    - bonne journee
+    - see you around
+    - bye bye
+    - a plus
+    - a plus tard
+    - ciao
+    - OK au revoir
+    - à plus tard
+    - à plus
+    - à bientôt
+    - à bientôt . au revoir
+
+- intent: remercier
+  examples: |
+    - merci
+    - merci beaucoup
+    - grand merci
+    - cool merci
+    - ok merci
+    - Parfait merci
+    - super merci
+    - thanks
+    - merco pour l'information
+    - m6
+    - thx
+
+- intent: reset_password
+  examples: |
+    - besoin de réinitialiser mon mot de passe
+    - besoin d'aide pour réinitialiser mon mot de passe
+    - Je ne peux pas réinitialiser mon mot de passe
+    - besoin d'aide avec mon mot de passe
+    - j'ai des problèmes pour réinitialiser mon mot de passe
+    - Réinitialiser mon mot de passe
+    - Réinitialisation du mot de passe
+    - j'ai oublié mon mot de passe et je ne peux pas le réinitialiser
+    - euh aide à la réinitialisation du mot de passe s'il vous plaît
+    - J'ai tellement de problèmes pour réinitialiser mon mot de passe
+    - Pouvez-vous réinitialiser mon mot de passe
+    - Mon mot de passe ne fonctionne pas pour moi que dois-je faire
+    - Comment puis-je reconfigurer mon mot de passe
+    - Réinitialisation du mot de passe?
+    - j'ai encore oublié mon mot de passe et maintenant que dois je faire 
+    - correction d'aide au mot de passe 
+    - montrez-moi comment définir à nouveau le mot de passe
+    - pouvez-vous me dire comment changer mon mot de passe
+    - changer le mot de passe
+    - J'ai oublié mon mot de passe que puis-je faire
+    - j'ai oublié mon mot de passe aidez-moi à le réinitialiser svp
+
+- intent: declarer_un_incident
+  examples: |
+    - J'ai besoin de declarer un incident
+    - Pouvez-vous ouvrir un dossier pour moi
+    - J'ai un problème pour lequel je dois ouvrir un incident
+    - declarer un incident
+    - pouvez-vous m'aider à ouvrir un incident s'il vous plaît
+    - Je veux declarer un nouvel incident
+    - Je veux declarer un incident
+    - J'ai un problème bizarre.
+    - j'ai un problème
+    - j 'ai un prbleme avec mon ordinateur 
+    - j'ai un probleme avec mon outils de travail.
+    - ouvrir un incident pour coumba.faye@example.com
+    - on a voler mon ordinateur 
+    - la connection  ne marche pas
+  
+  
+- intent: besoin_aide 
+  examples: |
+    - J'ai besoin d'aide
+    - en quoi pouvez-vous m'aider
+    - Pouvez-vous m'aider
+    - Que pouvez-vous faire
+    - aide-moi
+    - Pouvez-vous m'aider s'il vous plaît
+    - problème
+    - gros problème
+    - Comment pouvez vous m'aider
+    - Quelles sont mes options
+    - Qu'est-ce que tu es capable de faire ?
+    - Que puis-je vous demander ?
+    - Que puis-je faire?
+    - Que pouvez-vous faire une démonstration
+    - Que peux tu faire pour moi?
+    - Que pouvez-vous faire?
+    - Que pouvez-vous me dire?
+    - Que fais-tu
+    - Il y a-t-il des alternatives?
+    - aider
+    - aide-moi
+    - Aidez-moi, s'il vous plaît
+    - aide svp
+    - aider?
+
+
+- intent : problem_email
+  examples : |
+    - mon application Outlook ne s'ouvre pas
+    - J'ai des problèmes avec Outlook.
+    - problèmes avec les perspectives
+    - l'application Outlook ne s'ouvre pas
+    - il y a un problème avec mon email
+    - quelque chose est cassé avec les perspectives
+    - Je n'arrive pas à me connecter à mon email
+    - impossible de se connecter à Outlook
+    - mon email ne me permet pas de me connecter
+    - j'ai un problème avec mon email
+    - ne peut pas se relâcher
+    - je n'arrive pas à ouvrir mon email
+    - je n'arrive pas à me connecter
+    - J'ai du mal à me connecter à ma messagerie
+    - pouvez-vous m'aider avec mon email s'il vous plaît
+    - que pouvez-vous faire à propos de mon e-mail qui ne fonctionne pas
+    - pouvez-vous corriger les perspectives pour moi, je ne sais pas quoi faire
+    - quelque chose ne va pas avec mon e-mail
+    - pouvez-vous m'aider avec mon compte e-mail
+    - ma messagerie internet ne fonctionne pas
+    - Outlook me montre un message étrange
+    - l'e-mail ne se charge pas pouvez-vous m'aider
+
+- intent: affirm
+  examples: |
+    - oui
+    - c'est bon
+    - ok
+    - oui , c'est bon
+    - d'accord
+    - ca l'air bon
+    - correct
+    - tout a fait
+    - je valide
+    - Biensur
+- intent: refuser
+  examples: |
+    - je ne pense pas
+    - pas vraiment
+    - pas moyen
+    - je ne connais pas ma position
+    - je ne suis pas sûr de ma position
+    - je ne sais pas
+    - je ne suis pas nouveau ici
+    - aucune idée
+    - pas sûr
+    - je ne connais pas l'emplacement
+    - je ne suis pas sur
+    - je ne suis pas sûr
+    - non c'est bon
+- intent: content
+  examples: |
+    - Parfait
+    - tres bien
+    - super
+    - incroyable
+    - merveilleux
+    - je vais bien
+    - bien
+    - oui
+    - merci
+- intent: demande_nouvelle_politique
+  examples: |
+    - A qui s'applique cette nouvelle politique ?
+    - les personnes consernées par cette nouvelle politique ?
+    - les personnes consernées ?
+    - cette nouvelle politique s'applique t' il à tous les employés de d'Atos ?
+    - 
+- intent: demande_changement_politique
+  examples: |
+    - Quels sont les changements apportés par la nouvelle politique des mots de passe ?
+    - quels sont les changements ?
+    - Quels sont les modifications ?
+    - Changement apportés par la nouvelle politique
+    - quels seront les changements
+- intent: vol_machine_smartphone
+  examples: |
+    - on m' volé mon ordinateur
+    - quelqu'un a volez mon ordinateur
+    - on a pris mon ordinteur que doit je faire
+    - quelqu'un a voler mon ordinateur , que dois je faire
+    - j'ai perdu mon smartphone
+    - quelqu’un vient de me volez mon ordinateur portable
+    - quelqu’un vient de me mon smartphone
+    - quelqu’un vient de me volez mon ordinateur portable que dois je faire
+    - quelqu’un vient de me volez mon telephone portable que je faire
+    - on vient de me voler mon ordinateur
+- intent: dire_indentifiant 
+  examples: |
+    - [khady.diallo@atsos.net](email)
+    - [mon email c'est ifoma.yacoubou@gmail](gmail)
+    - 
+- intent: hors_domaine
+  examples: |
+    - je veux un ordinateur
+    - besoins d'aide par rapport à mon projet
+    - quels le menu aujourd 'huit
+    - mot de passe du wifi
+    - document en python
+    - documents en java script

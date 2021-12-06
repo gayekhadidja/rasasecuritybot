@@ -1,0 +1,18 @@
+version: "2.0"
+
+rules:
+
+- rule: dire nouvelle politique 
+  steps:
+  - intent: demande_nouvelle_politique
+  - action: utter_dire_nouvelle_politique
+
+- rule: dire changement politique 
+  steps:
+  - intent: demande_changement_politique
+  - action: utter_dire_changement
+
+- rule : hors du domaine
+  steps:
+    - intent : hors_domaine
+    - action : utter_hors_du_domaine

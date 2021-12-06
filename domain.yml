@@ -1,0 +1,27 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- affirm:
+    use_entities: true
+- hors_domaine:
+    use_entities: true
+- content:
+    use_entities: true
+- demande_nouvelle_politique:
+    use_entities: true
+- demande_changement_politique:
+    use_entities: true
+- saluer:
+    use_entities: true
+- vol_machine_smartphone:
+    use_entities: true
+entities: []
+slots: {}
+responses: {}
+actions: []
+forms: {}
+e2e_actions: []

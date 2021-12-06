@@ -1,0 +1,31 @@
+version: "2.0"
+
+stories:
+
+- story: interactive_story_1
+  steps:
+  - intent: demande_nouvelle_politique
+  - action: utter_dire_nouvelle_politique
+  - intent: demande_changement_politique
+  - action: utter_dire_changement
+  - intent: affirm
+  - intent: content
+
+
+
+- story: interactive_story_2
+  steps:
+  - intent: vol_machine_smartphone
+  - action: utter_demande_localite_vol
+  - intent: affirm
+  - action: utter_a_fair_en_cas_de_vol_ordinateur
+  - intent: content
+
+- story: interactive_story_1
+  steps:
+  - intent: saluer
+  - action: utter_saluer
+  - intent: demande_nouvelle_politique
+  - action: utter_dire_nouvelle_politique
+  - intent: demande_changement_politique
+  - action: utter_dire_changement
